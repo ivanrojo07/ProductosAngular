@@ -1,0 +1,19 @@
+<h1>{{titulo}}</h1>
+<div class="panel panel-info">
+        <div class="panel-heading">
+			<h3>{{producto.nombre}}</h3></div>
+      	<div class="panel-body">
+        <div class="col-lg-3" *ngIf="producto.imagen">
+			<img src="http://localhost/Angular4-Backend/uploads/{{producto.imagen}}" class="img-thumbnail">	
+		</div>
+		<div class="col-lg-3" *ngIf="!producto.imagen">
+			<div class="img-relleno"></div>
+		</div>
+		<div class="col-lg-9">
+			<strong>${{producto.precio}}</strong>
+	      	<p>{{producto.description}}</p>
+		</div>
+
+	      
+      </div>
+</div>
